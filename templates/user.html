@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://fly.lse.dog/user -->
+<!--suppress HtmlUnknownTarget -->
+<html lang="zh-cn" class=" no-touchevents">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+    <meta name="theme-color" content="#ff9800">
+    <title>围墙 - 海外服游戏加速</title>
+    <!-- css -->
+    <link href="../static/css/lse/base.min.css" rel="stylesheet">
+    <link href="../static/css/lse/project.min.css" rel="stylesheet">
+    <link href="../static/css/lse/css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css?family=Material+Icons">
+    <link type="favicon" rel="shortcut icon" href="../static/favicon.ico"/>
+    <style>
+        body {
+            background: #eee;
+        }
+
+        @keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                transform: rotate(1080deg);
+            }
+            100% {
+                transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-webkit-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -webkit-transform: rotate(1080deg);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-moz-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -moz-transform: rotate(1080deg);
+            }
+            100% {
+                -moz-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-ms-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -ms-transform: rotate(1080deg);
+            }
+            100% {
+                -ms-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-o-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -o-transform: rotate(1080deg);
+            }
+            100% {
+                -o-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+    </style>
+
+
+    <!-- favicon -->
+    <!-- ... -->
+    <style>
+
+        .pagination > li {
+            display: inline
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #337ab7;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd
+        }
+
+        .pagination > li:first-child > a,
+        .pagination > li:first-child > span {
+            margin-left: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px
+        }
+
+        .pagination > li:last-child > a,
+        .pagination > li:last-child > span {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px
+        }
+
+        .pagination > li > a:focus,
+        .pagination > li > a:hover,
+        .pagination > li > span:focus,
+        .pagination > li > span:hover {
+            color: #23527c;
+            background-color: #eee;
+            border-color: #ddd
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: #337ab7;
+            border-color: #337ab7
+        }
+
+        .pagination > .disabled > a,
+        .pagination > .disabled > a:focus,
+        .pagination > .disabled > a:hover,
+        .pagination > .disabled > span,
+        .pagination > .disabled > span:focus,
+        .pagination > .disabled > span:hover {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff;
+            border-color: #ddd
+        }
+
+        .pagination-lg > li > a,
+        .pagination-lg > li > span {
+            padding: 10px 16px;
+            font-size: 18px
+        }
+
+        .pagination-lg > li:first-child > a,
+        .pagination-lg > li:first-child > span {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px
+        }
+
+        .pagination-lg > li:last-child > a,
+        .pagination-lg > li:last-child > span {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px
+        }
+
+        .pagination-sm > li > a,
+        .pagination-sm > li > span {
+            padding: 5px 10px;
+            font-size: 12px
+        }
+
+        .pagination-sm > li:first-child > a,
+        .pagination-sm > li:first-child > span {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px
+        }
+
+        .pagination-sm > li:last-child > a,
+        .pagination-sm > li:last-child > span {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px
+        }
+
+        .pager li {
+            display: inline
+        }
+
+        .pager li > a,
+        .pager li > span {
+            display: inline-block;
+            padding: 5px 14px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px
+        }
+
+        .pager li > a:focus,
+        .pager li > a:hover {
+            text-decoration: none;
+            background-color: #eee
+        }
+
+        .pager .next > a,
+        .pager .next > span {
+            float: right
+        }
+
+        .pager .previous > a,
+        .pager .previous > span {
+            float: left
+        }
+
+        .pager .disabled > a,
+        .pager .disabled > a:focus,
+        .pager .disabled > a:hover,
+        .pager .disabled > span {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            border: 1px solid white;
+        }
+
+        .pagination > li.active > a {
+            background: #f50057;
+            color: #fff;
+        }
+
+        .pagination > li > a {
+            background: white;
+            color: #000;
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+        }
+
+        .pagination > .active > span {
+            background-color: #f50057;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .pagination > .disabled > span {
+            border-color: #fff;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .page-orange .ui-content-header {
+            background-image: url(https://cdn.jsdelivr.net/gh/sspuic/p@0x01/public/theme/material/css/images/bg/amber.jpg);
+        }
+
+        .content-heading {
+            font-weight: 300;
+            color: #fff;
+        }
+    </style>
+
+
+    <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
+    <script src="../static/js/lse/l.js" async=""></script>
+    <script src="../static/js/lse/client.js" type="text/javascript" async=""></script>
+    <link href="../static/css/lse/client_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="page-orange">
+<header class="header header-orange header-transparent header-waterfall ui-header affix-top">
+    <ul class="nav nav-list pull-left">
+        <div>
+            <a data-toggle="menu" href="https://fly.lse.dog/user#ui_menu">
+                <span class="icon icon-lg text-white">format_align_justify</span>
+            </a>
+        </div>
+    </ul>
+
+    <ul class="nav nav-list pull-right">
+        <div class="dropdown margin-right">
+            <a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+                <span class="access-hide">yukint</span>
+                <span class="avatar avatar-sm">
+                        <img alt="alt text for John Smith avatar"
+                             src="../static/image/lse/e759980aadfd244969bdf1048bd27848.jpg">
+                    </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    <a class="padding-right-lg waves-attach waves-effect" href="/lse">
+                        <span class="icon icon-lg margin-right">account_box</span>用户中心</a>
+                </li>
+
+                <li>
+                    <a class="padding-right-cd waves-attach waves-effect" href="https://fly.lse.dog/user/logout">
+                        <span class="icon icon-lg margin-right">exit_to_app</span>登出</a>
+                </li>
+            </ul>
+
+        </div>
+    </ul>
+</header>
+<nav aria-hidden="true" class="menu menu-left nav-drawer nav-drawer-md" id="ui_menu" tabindex="-1">
+    <div class="menu-scroll">
+        <div class="menu-content">
+            <!--suppress HtmlUnknownTarget -->
+            <a class="menu-logo" href="/lse">
+                <i class="icon icon-lg">language</i>&nbsp;围墙</a>
+            <ul class="nav">
+                <li>
+                    <a class="waves-attach waves-effect" data-toggle="collapse"
+                       href="https://fly.lse.dog/user#ui_menu_me">我的</a>
+                    <ul class="menu-collapse collapse in" id="ui_menu_me">
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/lse">
+                                <i class="icon icon-lg">account_balance_wallet</i>&nbsp;用户中心
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/album">
+                                <i class="icon icon-lg">account_box</i>&nbsp;专辑
+                            </a>
+                        </li>
+
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/song">
+                                <i class="icon icon-lg">sync_problem</i>&nbsp;歌曲
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/ticket">
+                                <i class="icon icon-lg">question_answer</i>&nbsp;工单系统
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://fly.lse.dog/user/invite">
+                                <i class="icon icon-lg">loyalty</i>&nbsp;邀请链接
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                    <a class="waves-attach waves-effect" data-toggle="collapse"
+                       href="https://fly.lse.dog/user#ui_menu_help">商店</a>
+                    <ul class="menu-collapse collapse in" id="ui_menu_help">
+                        <li>
+                            <a href="https://fly.lse.dog/user/code">
+                                <i class="icon icon-lg">code</i>&nbsp;充值
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/shop">
+                                <i class="icon icon-lg">shop</i>&nbsp;套餐购买
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/bought">
+                                <i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/donate">
+                                <i class="icon icon-lg">attach_money</i>&nbsp;捐赠公示
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li>
+                    <div class="divcss5">
+                        <img src="../static/image/lse/Ambassador-menu.png" width="230" height="300">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main class="content">
+
+    <div class="content-header ui-content-header">
+        <div class="container">
+            <h1 class="content-heading">用户中心</h1>
+        </div>
+    </div>
+    <div class="container">
+        <section class="content-inner margin-top-no">
+            <div class="ui-card-wrap">
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="card">
+                        <div class="card-main">
+                            <div class="card-inner margin-bottom-no">
+                                <p class="card-heading">
+                                    <i class="icon icon-md">notifications_active</i>公告栏</p>
+                                <p></p>
+                                <p>听说又一波机场被墙倒下了 ，可以拉你挂掉的小伙伴来我群哦这里每天签到送5G，接收难民 ，还有免费的TG直连代理 。</p>
+                                <p>重点：邀请码有效注册送50GB</p>
+                                <p></p>
+                                <p>站点所有节点为了长期稳定适用，只支持SSR链接方式。</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-main">
+                            <div class="card-inner margin-bottom-no">
+                                <p class="card-heading">
+                                    <i class="icon icon-md">phonelink</i> 快速添加节点</p>
+                                <div class="card-inner">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade active in" id="all_ssr">
+
+                                            <nav class="tab-nav margin-top-no">
+                                                <ul class="nav nav-list">
+                                                    <li class="active">
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_windows">
+                                                            <i class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_mac">
+                                                            <i class="icon icon-lg">laptop_mac</i>&nbsp;MacOS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_linux">
+                                                            <i class="icon icon-lg">dvr</i>&nbsp;Linux</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect"
+                                                           href="https://lse.dog/150.html" target="_blank">
+                                                            <i class="icon icon-lg">phone_iphone</i>&nbsp;iOS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_android">
+                                                            <i class="icon icon-lg">android</i>&nbsp;Android</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_router">
+                                                            <i class="icon icon-lg">router</i>&nbsp;路由器</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_game">
+                                                            <i class="icon icon-lg">videogame_asset</i>&nbsp;游戏端</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ssr_info">
+                                                            <i class="icon icon-lg">info_outline</i>&nbsp;连接信息</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-nav-indicator"></div>
+                                            </nav>
+
+                                            <div class="tab-pane fade active in" id="all_ssr_windows">
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_one</span>
+                                                    <a href="https://fly.lse.dog/ssr-download/ssr-win.7z">
+                                                        点击我下载</a>
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_two</span> 解压至任意磁盘</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_3</span> 运行程序</p>
+
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_4</span>
+                                                    任务栏右下角右键纸飞机图标--服务器订阅--SSR服务器订阅设置，将订阅链接设置为下面的地址，确定之后再更新
+                                                    SSR 服务器订阅。</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_5</span>
+                                                    然后选择一个合适的服务器，代理规则选“绕过局域网和大陆”，然后即可上网。</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">flash_auto</span> 订阅地址：
+                                                    <label>
+                                                        <input type="text"
+                                                               class="input form-control form-control-monospace"
+                                                               name="input1" readonly=""
+                                                               value="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                    </label>
+                                                    <button class="copy-text btn btn-subscription" type="button"
+                                                            data-clipboard-text="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                        点击拷贝订阅地址
+                                                    </button>
+                                                    <br>
+                                                    <!--	单端口多用户端口订阅地址：<code>https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=1</code>  -->
+                                                </p>
+                                                <p>
+                                                    <a href="https://fly.lse.dog/user/announcement">点击这里查看Windows傻瓜式教程</a>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_mac">
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_one</span>
+                                                    <a href="https://fly.lse.dog/ssr-download/ssr-mac.dmg">
+                                                        点击我下载</a>
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_two</span> 打开下载的Dmg文件
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_3</span>
+                                                    把ShadowsocksX拖入到Finder的应用程序列表(Applications)</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_4</span>
+                                                    打开Launchapad里的ShadowsocksX</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_5</span>
+                                                    菜单栏的纸飞机图标-服务器-服务器订阅填入以下订阅地址，更新后出现您的节点</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_6</span>
+                                                    菜单栏的纸飞机图标-打开shadowsocks</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">flash_auto</span> 订阅地址：
+                                                    <input type="text" class="input form-control form-control-monospace"
+                                                           name="input1" readonly=""
+                                                           value="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0"
+                                                           title="">
+                                                    <button class="copy-text btn btn-subscription" type="button"
+                                                            data-clipboard-text="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                        点击拷贝订阅地址
+                                                    </button>
+                                                    <br>
+
+                                                </p>
+                                                <p>
+                                                    <a href="https://fly.lse.dog/user/announcement">点击这里查看Mac傻瓜式教程</a>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_linux">
+                                                <p>
+                                                    <a href="https://fly.lse.dog/user/announcement">点击这里查看Linux傻瓜式教程</a>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_ios">
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_one</span> 切换
+                                                    <code>App Store</code>账号-ID:
+                                                    <code>
+                                                        VIP用户可见
+                                                    </code>密码
+                                                    <code>
+                                                        VIP用户可见
+                                                    </code>注意特殊符号与大小写,如果显示需要解锁账号，请提交工单或邮件。（千万不要试图登陆iCloud，会上传您的照片与通讯录到这个账户上）
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_two</span> 商店搜索
+                                                    <code>Shadowrocket</code>下载安装</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_3</span>
+                                                    安装完成后切换回您自己的账号。（请务必切换回您自己的账户）</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_3</span>
+                                                    打开Shadowrocket软件后，点击右上角
+                                                    <span class="icon icon-lg text-white">add</span>，添加类型为
+                                                    <code>Subscribe</code>，URL填写以下地址即可自动更新节点</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_4</span>
+                                                    选择任意节点点击连接，然后点击allow后解锁指纹</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_5</span>
+                                                    注意：第一次连接可能不能用，导入后程序退出并重新打开程序后连接即可！</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">flash_auto</span> 订阅地址：
+                                                    <label>
+                                                        <input type="text"
+                                                               class="input form-control form-control-monospace"
+                                                               name="input1" readonly=""
+                                                               value="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                    </label>
+                                                    <button class="copy-text btn btn-subscription" type="button"
+                                                            data-clipboard-text="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                        点击拷贝订阅地址
+                                                    </button>
+                                                    <br>
+                                                </p>
+                                                <p>
+                                                    <a href="https://fly.lse.dog/user/announcement">点击这里查看iOS傻瓜式教程</a>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_android">
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_1</span>
+                                                    <a href="https://fly.lse.dog/ssr-download/ssr-android.apk">
+                                                        点击我下载</a>并安装</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_2</span> 打开App，点击右下角的
+                                                    <span class="icon icon-lg text-white">add</span>号图标</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_3</span> 添加/升级 SSR订阅
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_4</span>
+                                                    添加订阅地址，输入以下订阅地址后确定</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_5</span>
+                                                    订阅出现系统自带的与围墙，请把系统自带的无效订阅左滑删除（自带影响订阅更新速度）</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_6</span> 点击确定并升级</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_7</span> 选择任意节点</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_8</span>
+                                                    路由选择：略过区域网路以及中国大陆</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">filter_9</span>
+                                                    点击右上角的纸飞机图标即可连接</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">flash_auto</span> 订阅地址：
+                                                    <label>
+                                                        <input type="text"
+                                                               class="input form-control form-control-monospace"
+                                                               name="input1" readonly=""
+                                                               value="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                    </label>
+                                                    <button class="copy-text btn btn-subscription" type="button"
+                                                            data-clipboard-text="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                        点击拷贝订阅地址
+                                                    </button>
+                                                    <br>
+                                                </p>
+                                                <p>
+                                                    <a href="https://fly.lse.dog/user/announcement">点击这里查看Android傻瓜式教程</a>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_router">
+                                                <p>路由器 刷入
+                                                    <a href="http://www.right.com.cn/forum/thread-161324-1-1.html">这个固件</a>，然后
+                                                    SSH 登陆路由器，执行以下命令（导入普通端口）
+                                                    <br>
+                                                    <code>wget -O- https://fly.lse.dog/link/L3vHt55hGDnXtGLA?is_ss=0 |
+                                                        bash &amp;&amp; echo -e "\n0 */3 * * * wget -O-
+                                                        https://fly.lse.dog/link/L3vHt55hGDnXtGLA?is_ss=0 | bash\n"&gt;&gt;
+                                                        /etc/storage/cron/crontabs/admin &amp;&amp; killall crond &amp;&amp;
+                                                        crond </code>
+                                                    <br> 这个单端口多用户的
+                                                    <br>
+                                                    <code>wget -O- https://fly.lse.dog/link/cOaTXmD2rY0ck1BY?is_ss=0 |
+                                                        bash &amp;&amp; echo -e "\n0 */3 * * * wget -O-
+                                                        https://fly.lse.dog/link/cOaTXmD2rY0ck1BY?is_ss=0 | bash\n"&gt;&gt;
+                                                        /etc/storage/cron/crontabs/admin &amp;&amp; killall crond &amp;&amp;
+                                                        crond </code>
+                                                    <br> 执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_game">
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_one</span>
+                                                    <a href="https://fly.lse.dog/ssr-download/SSTap.7z">点击我下载</a>
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_two</span>
+                                                    安装，期间会安装虚拟网卡，请点击允许或确认</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_3</span> 打开桌面程序SSTap</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_4</span>
+                                                    齿轮图标-SSR订阅-SSR订阅管理添加以下订阅链接即可</p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">looks_5</span>
+                                                    更新后选择其中一个节点闪电图标测试节点-测试UDP转发...通过!（UDP通过即可连接并开始游戏），如测试不通过，点击齿轮图标设置DNS，推荐谷歌DNS
+                                                </p>
+                                                <p>
+                                                    <span class="icon icon-lg text-white">flash_auto</span> 订阅地址：
+                                                    <label>
+                                                        <input type="text"
+                                                               class="input form-control form-control-monospace"
+                                                               name="input1" readonly=""
+                                                               value="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                    </label>
+                                                    <button class="copy-text btn btn-subscription" type="button"
+                                                            data-clipboard-text="https://fly.lse.dog/link/bugeL6Yf9kFtmFkl?mu=0">
+                                                        点击拷贝订阅地址
+                                                    </button>
+                                                    <br>
+                                                </p>
+                                                <p>
+                                                    <a href="https://fly.lse.dog/user/announcement">点击这里查看游戏客户端傻瓜式教程</a>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ssr_info">
+                                                <dl class="dl-horizontal">
+                                                    <p></p>
+                                                    <dt>
+                                                        <code>优先导入普通端口，如果普通端口无法使用再导入单端口</code>
+                                                    </dt>
+                                                    <p></p>
+                                                    <p></p>
+                                                    <dt>端口</dt>
+                                                    <dd>53555</dd>
+                                                    <p></p>
+
+                                                    <p></p>
+                                                    <dt>密码</dt>
+                                                    <dd>OnW6oFbiye.la</dd>
+                                                    <p></p>
+
+                                                    <p></p>
+                                                    <dt>自定义加密</dt>
+                                                    <dd>chacha20-ietf</dd>
+                                                    <p></p>
+
+                                                    <p></p>
+                                                    <dt>自定义协议</dt>
+                                                    <dd>auth_aes128_md5</dd>
+                                                    <p></p>
+
+                                                    <p></p>
+                                                    <dt>自定义混淆</dt>
+                                                    <dd>http_simple</dd>
+                                                    <p></p>
+                                                </dl>
+                                            </div>
+
+
+                                        </div>
+
+                                        <div class="tab-pane fade " id="all_ss">
+                                            <nav class="tab-nav margin-top-no">
+                                                <ul class="nav nav-list">
+                                                    <li class="active">
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ss_info">
+                                                            <i class="icon icon-lg">info_outline</i>&nbsp;连接信息</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ss_windows">
+                                                            <i class="icon icon-lg">desktop_windows</i>&nbsp;Windows</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ss_mac">
+                                                            <i class="icon icon-lg">laptop_mac</i>&nbsp;MacOS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect"
+                                                           href="https://lse.dog/150.html" target="_blank">
+                                                            <i class="icon icon-lg">phone_iphone</i>&nbsp;iOS</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ss_android">
+                                                            <i class="icon icon-lg">android</i>&nbsp;Android</a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="waves-attach waves-effect" data-toggle="tab"
+                                                           href="https://fly.lse.dog/user#all_ss_router">
+                                                            <i class="icon icon-lg">router</i>&nbsp;路由器</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="tab-nav-indicator"></div>
+                                            </nav>
+                                            <div class="tab-pane fade active in" id="all_ss_info">
+
+                                                <p>您好，您目前的 加密方式，混淆，或者协议设置在 SS 客户端下无法连接。请您选用 SSR 客户端来连接，或者到 资料编辑
+                                                    页面修改后再来查看此处。</p>
+                                                <p>同时, Shadowsocks 单端口多用户的连接不受您设置的影响,您可以在此使用相应的客户端进行连接~</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ss_windows">
+                                                <p>
+                                                    <a href="https://fly.lse.dog/ssr-download/ss-win.zip">下载</a>，解压，运行程序，然后您有两种方式导入所有节点
+                                                    <br> (1)下载
+                                                    <a href="https://fly.lse.dog/user/getpcconf?is_mu=0&amp;is_ss=1">这个（普通端口）</a>，放到小飞机的目录下，然后打开小飞机。
+                                                    <br> (2)点击
+                                                    <a class="copy-text" data-clipboard-text="">这里（普通端口）</a>, 然后右键小飞机 --
+                                                    从剪贴板导入 URL
+                                                    <br>
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ss_mac">
+                                                <p>
+                                                    <a href="https://fly.lse.dog/ssr-download/ss-mac.zip">下载</a>，安装，然后下载
+                                                    <a href="https://fly.lse.dog/user/getpcconf?is_mu=0&amp;is_ss=1">这个（普通端口）</a>或者
+                                                    <a href="https://fly.lse.dog/user/getpcconf?is_mu=1&amp;is_ss=1">这个（单端口多用户）</a>，运行程序，小飞机上右键
+                                                    服务器列表 子菜单 的 “导入服务器配置文件...” 导入这个文件，然后选择一个合适的服务器，更新一下PAC，然后开启系统代理即可上网。
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ss_ios">
+                                                <p>推荐下载
+                                                    <a href="https://itunes.apple.com/cn/app/shadowrocket/id932747118?mt=8">Shadowrocket</a>，请在左侧菜单栏里提交工单申请已购买软件的美国商店Apple
+                                                    ID自行切换商店账号下载安装，为了您的隐私安全，请不要登录
+                                                    iCloud 。下载完成后在 Safari 中点击
+                                                    <a href="https://fly.lse.dog/user">这个（普通端口）</a>或者
+                                                    <a href="https://fly.lse.dog/user">这个（单端口多用户）</a>，然后点击确定，就可以批量添加节点。
+                                                </p>
+                                                <p>iOS 下载
+                                                    <a href="https://fly.lse.dog/link/JfLfVGjvmmBmRWR5?is_ss=1">这个（普通端口）</a>或者
+                                                    <a href="https://fly.lse.dog/link/JfLfVGjvmmBmRWR5?is_ss=1&amp;is_mu=1">这个（单端口多用户）</a>，导入到
+                                                    Surge 中，然后就可以随意切换服务器上网了。</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ss_android">
+                                                <p>
+                                                    <a href="https://fly.lse.dog/ssr-download/ss-android.apk">下载</a>，再
+                                                    <a href="https://fly.lse.dog/ssr-download/ss-android-obfs.apk">下载</a>，然后安装，然后在手机上点击
+                                                    <a class="copy-text" data-clipboard-text="">
+                                                        这个链接（普通端口）</a>或者
+                                                    <a class="copy-text" data-clipboard-text="">这个链接（单端口多用户端口）</a>复制到剪贴板，打开
+                                                    Shadowsocks 客户端，选择从剪贴板导入，然后选择一个节点，设置一下路由为绕过大陆，点击飞机就可以上网了。</p>
+                                            </div>
+                                            <div class="tab-pane fade" id="all_ss_router">
+                                                <p>路由器 刷入
+                                                    <a href="http://www.right.com.cn/forum/thread-161324-1-1.html">这个固件</a>，然后
+                                                    SSH 登陆路由器，执行以下命令（导入普通端口）
+                                                    <br>
+                                                    <code>wget -O- https://fly.lse.dog/link/L3vHt55hGDnXtGLA?is_ss=1 |
+                                                        bash &amp;&amp; echo -e "\n0 */3 * * * wget -O-
+                                                        https://fly.lse.dog/link/L3vHt55hGDnXtGLA?is_ss=1 | bash\n"&gt;&gt;
+                                                        /etc/storage/cron/crontabs/admin &amp;&amp; killall crond &amp;&amp;
+                                                        crond </code>
+                                                    <br> 或者这个单端口多用户的
+                                                    <br>
+                                                    <code>wget -O- https://fly.lse.dog/link/cOaTXmD2rY0ck1BY?is_ss=1 |
+                                                        bash &amp;&amp; echo -e "\n0 */3 * * * wget -O-
+                                                        https://fly.lse.dog/link/cOaTXmD2rY0ck1BY?is_ss=1 | bash\n"&gt;&gt;
+                                                        /etc/storage/cron/crontabs/admin &amp;&amp; killall crond &amp;&amp;
+                                                        crond </code>
+                                                    <br> 执行完毕以后就可以到路由器的设置面板里随意选择 Shadowsocks 服务器进行连接了。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-action">
+                                    <div class="card-action-btn pull-left">
+                                        <p>
+                                            <a class="reset-link btn btn-brand btn-flat waves-attach waves-effect">
+                                                <span class="icon">autorenew</span>&nbsp;重置订阅链接</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 col-md-6">
+
+                    <div class="card">
+                        <div class="card-main">
+                            <div class="card-inner margin-bottom-no">
+                                <p class="card-heading">
+                                    <i class="icon icon-md">account_circle</i>账号使用情况</p>
+                                <dl class="dl-horizontal">
+                                    <p></p>
+                                    <dt>帐号等级</dt>
+                                    <dd>
+                                        <i class="icon icon-md t4-text">stars</i>&nbsp;免费
+                                    </dd>
+                                    <p></p>
+                                    <!--
+                                          -->
+                                    <p></p>
+
+                                    <p></p>
+                                    <dt>等级过期时间</dt>
+                                    <dd>
+                                        <i class="icon icon-md">event</i>&nbsp;2018-05-28 02:21:05
+                                    </dd>
+                                    <p></p>
+                                    <p></p>
+                                    <dt>等级有效期</dt>
+                                    <i class="icon icon-md">event</i>
+                                    <span class="label-level-expire" style="display: none;">剩余</span>
+                                    <code><span id="days-level-expire">无限期</span></code>
+                                    <span class="label-level-expire" style="display: none;">天</span>
+                                    <p></p>
+
+                                    <p></p>
+                                    <dt>帐号过期时间</dt>
+                                    <dd>
+                                        <i class="icon icon-md">event</i>&nbsp;2028-05-24 02:21:05
+                                    </dd>
+                                    <p></p>
+                                    <p></p>
+                                    <dt>账号有效期</dt>
+                                    <i class="icon icon-md">event</i>
+                                    <span class="label-account-expire">剩余</span>
+                                    <code><span id="days-account-expire">3622</span></code>
+                                    <span class="label-account-expire">天</span>
+                                    <p></p>
+
+                                    <p></p>
+                                    <dt>速度限制</dt>
+                                    <dd>
+                                        <i class="icon icon-md">settings_input_component</i>&nbsp;
+                                        <code>20</code>Mbps
+                                    </dd>
+                                    <p></p>
+                                    <p></p>
+                                    <dt>在线设备数</dt>
+                                    <dd>
+                                        <i class="icon icon-md">phonelink</i>&nbsp;1 / 1
+                                    </dd>
+                                    <p></p>
+                                    <p></p>
+                                    <dt>余额</dt>
+                                    <dd>
+                                        <i class="icon icon-md">monetization_on</i>&nbsp;
+                                        <code>0.00</code> CNY
+                                    </dd>
+                                    <p></p>
+                                    <p></p>
+                                    <dt>上次使用</dt>
+                                    <dd>
+                                        <i class="icon icon-md">event</i>&nbsp;2018-06-23 11:09:30
+                                    </dd>
+                                    <p></p>
+                                    <p></p>
+                                    <dt>上次签到时间：</dt>
+                                    <dd>
+                                        <i class="icon icon-md">event</i>&nbsp;2018-06-22 14:14:48
+                                    </dd>
+                                    <p></p>
+
+
+                                    <p id="checkin-msg"></p>
+
+
+                                    <div class="card-action">
+                                        <div class="card-action-btn pull-left">
+                                            <!--p id="checkin-btn">
+                                                <button id="checkin" class="btn btn-brand btn-flat waves-attach"><span class="icon">check</span>&nbsp;点我签到&nbsp;<span class="icon">screen_rotation</span>&nbsp;或者摇动手机签到</button>
+                                            </p-->
+                                            <p>
+                                                <a class="btn btn-brand disabled btn-flat waves-attach waves-effect"
+                                                   href="https://fly.lse.dog/user#">
+                                                    <span class="icon">check</span>&nbsp;请在telegram群组内签到</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </dl>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-main">
+                            <div class="card-inner margin-bottom-no">
+
+                                <div id="traffic_chart" style="height: 300px; width: 100%;">
+                                    <div class="canvasjs-chart-container"
+                                         style="position: relative; text-align: left; cursor: auto;">
+                                        <canvas class="canvasjs-chart-canvas" width="519" height="300"
+                                                style="position: absolute;"></canvas>
+                                        <canvas class="canvasjs-chart-canvas" width="519" height="300"
+                                                style="position: absolute; -webkit-tap-highlight-color: transparent; cursor: default;"></canvas>
+                                        <div class="canvasjs-chart-toolbar"
+                                             style="position: absolute; right: 1px; top: 1px; border: 1px solid transparent;"></div>
+                                        <div class="canvasjs-chart-tooltip"
+                                             style="position: absolute; height: auto; box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 2px; z-index: 1000; pointer-events: none; display: none; border-radius: 5px;">
+                                            <div style=" width: auto;height: auto;min-width: 50px; margin: 0 0 0 0;padding: 5px;font-family: Calibri, Arial, Georgia, serif;font-weight: normal;font-style: italic;font-size: 14px;color: #000000;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);text-align: left;border: 2px solid gray;background: rgba(255,255,255,.9);text-indent: 0;white-space: nowrap;border-radius: 5px;-moz-user-select:none;-khtml-user-select: none;-webkit-user-select: none;-ms-user-select: none;user-select: none;} ">
+                                                Sample Tooltip
+                                            </div>
+                                        </div>
+                                        <a class="canvasjs-chart-credit"
+                                           style="outline:none;margin:0;position:absolute;right:2px;top:286px;color:dimgrey;text-decoration:none;font-size:11px;font-family: Calibri, Lucida Grande, Lucida Sans Unicode, Arial, sans-serif"
+                                           tabindex="-1" target="_blank" href="https://canvasjs.com/">CanvasJS.com</a>
+                                    </div>
+                                </div>
+
+                                <script src="../static/js/lse/canvasjs.min.js" type=""></script>
+                                <script type="text/javascript">
+                                    let chart = new CanvasJS.Chart("traffic_chart",
+
+
+                                        {
+                                            theme: "light1",
+
+
+                                            title: {
+                                                text: "流量使用情况",
+                                                fontFamily: "Impact",
+                                                fontWeight: "normal"
+                                            },
+                                            legend: {
+                                                verticalAlign: "bottom",
+                                                horizontalAlign: "center"
+                                            },
+                                            data: [
+                                                {
+                                                    startAngle: -15,
+                                                    indexLabelFontSize: 20,
+                                                    indexLabelFontFamily: "Garamond",
+                                                    indexLabelFontColor: "darkgrey",
+                                                    indexLabelLineColor: "darkgrey",
+                                                    indexLabelPlacement: "outside",
+                                                    yValueFormatString: "##0.00\"%\"",
+                                                    type: "pie",
+                                                    showInLegend: true,
+                                                    dataPoints: [
+                                                        {
+                                                            y: 7.8530073675794,
+                                                            label: "总已用",
+                                                            legendText: "总已用 7.85% 4.34GB",
+                                                            indexLabel: "总已用 7.85% 4.34GB"
+                                                        },
+                                                        {
+                                                            y: 0.061479983447851,
+                                                            label: "今日",
+                                                            legendText: "今日 0.06% 34.78MB",
+                                                            indexLabel: "今日 0.06% 34.78MB"
+                                                        },
+                                                        {
+                                                            y: 92.085512648973,
+                                                            label: "剩余可用",
+                                                            legendText: "剩余可用 92.09% 50.88GB",
+                                                            indexLabel: "剩余可用 92.09% 50.88GB"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        });
+
+                                    chart.render();
+                                </script>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div aria-hidden="true" class="modal modal-va-middle fade" id="result" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-xs">
+                    <div class="modal-content">
+                        <div class="modal-inner">
+                            <p class="h5 margin-top-sm text-black-hint" id="msg"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-right">
+                                <button class="btn btn-flat btn-brand-accent waves-attach waves-effect"
+                                        data-dismiss="modal"
+                                        type="button" id="result_ok">知道了
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+</main>
+
+
+<footer class="ui-footer">
+    <div class="container">
+        <marquee>© 围墙
+            <a href="https://fly.lse.dog/staff">STAFF</a>&nbsp;如果还有来生 ，我无论如何都要来到你身边，我已经没有了其他想要追求的东西，因为没有比你更重要的了。
+        </marquee>
+
+
+        <!-- js -->
+        <script src="../static/js/jquery.min.js" type=""></script>
+        <script src="../static/js/lse/jquery.validate.min.js" type=""></script>
+        <script src="../static/js/lse/gt.js" type=""></script>
+
+        <script src="../static/js/lse/base.min.js" type=""></script>
+        <script src="../static/js/lse/project.min.js" type=""></script>
+        <script src="../static/js/lse/clipboard.min.js" type=""></script>
+        <!--script type="text/javascript" color="217,113,24" opacity="0.8" count="99" src="/assets/js/canvas-nest.min.js"></script-->
+
+
+        <script src="../static/js/lse/shake.js" type=""></script>
+
+        <script type="">
+
+            function DateParse(str_date) {
+                let str_date_splited = str_date.split(/[^0-9]/);
+                return new Date(str_date_splited[0], str_date_splited[1] - 1, str_date_splited[2], str_date_splited[3], str_date_splited[4], str_date_splited[5]);
+            }
+
+            /*
+             * Author: neoFelhz & CloudHammer
+             * https://github.com/CloudHammer/CloudHammer/make-sspanel-v3-mod-great-again
+             * License: MIT license & SATA license
+             */
+            function CountDown() {
+                let levelExpire = DateParse("2018-05-28 02:21:05");
+                let accountExpire = DateParse("2028-05-24 02:21:05");
+                let nowDate = new Date();
+                let a = nowDate.getTime();
+                let b = levelExpire - a;
+                let c = accountExpire - a;
+                let levelExpireDays = Math.floor(b / (24 * 3600 * 1000));
+                let accountExpireDays = Math.floor(c / (24 * 3600 * 1000));
+                if (levelExpireDays < 0 || levelExpireDays > 315360000000) {
+                    document.getElementById('days-level-expire').innerHTML = "无限期";
+                    for (let i = 0; i < document.getElementsByClassName('label-level-expire').length; i += 1) {
+                        document.getElementsByClassName('label-level-expire')[i].style.display = 'none';
+                    }
+                } else {
+                    document.getElementById('days-level-expire').innerHTML = levelExpireDays;
+                }
+                if (accountExpireDays < 0 || accountExpireDays > 315360000000) {
+                    document.getElementById('days-account-expire').innerHTML = "无限期";
+                    for (let i = 0; i < document.getElementsByClassName('label-account-expire').length; i += 1) {
+                        document.getElementsByClassName('label-account-expire')[i].style.display = 'none';
+                    }
+                } else {
+                    document.getElementById('days-account-expire').innerHTML = accountExpireDays;
+                }
+            }
+        </script>
+
+
+        <script type="">
+
+            $(function () {
+                new Clipboard('.copy-text');
+            });
+
+            $(".copy-text").click(function () {
+                $("#result").modal();
+                $("#msg").html("已拷贝订阅链接，请您继续接下来的操作。");
+            });
+            $(function () {
+                new Clipboard('.reset-link');
+            });
+
+            $(".reset-link").click(function () {
+                $("#result").modal();
+                $("#msg").html("已重置您的订阅链接，请变更或添加您的订阅链接！");
+                window.setTimeout("location.href='/user/url_reset'", 1200);
+            });
+
+
+            window.onload = function () {
+                let myShakeEvent = new Shake({
+                    threshold: 15
+                });
+
+                myShakeEvent.start();
+                CountDown();
+
+                window.addEventListener('shake', shakeEventDidOccur, false);
+
+                function shakeEventDidOccur() {
+                    if ("vibrate" in navigator) {
+                        navigator.vibrate(500);
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/checkin",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#checkin-msg").html(data.msg);
+                            $("#checkin-btn").hide();
+                            $("#result").modal();
+                            $("#msg").html(data.msg);
+                        },
+                        error: function (jqXHR) {
+                            $("#result").modal();
+                            $("#msg").html("发生错误：" + jqXHR.status);
+                        }
+                    });
+                }
+            };
+
+
+            $(document).ready(function () {
+                $("#checkin").click(function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/checkin",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#checkin-msg").html(data.msg);
+                            $("#checkin-btn").hide();
+                            $("#result").modal();
+                            $("#msg").html(data.msg);
+                        },
+                        error: function (jqXHR) {
+                            $("#result").modal();
+                            $("#msg").html("发生错误：" + jqXHR.status);
+                        }
+                    })
+                })
+            })
+
+
+        </script>
+    </div>
+</footer>
+<span style="position: absolute; left: 0; top: -20000px; padding: 0; margin: 0; border: none; white-space: pre; line-height: normal; font-family: Garamond, serif; font-size: 20px; font-weight: normal; display: none;">Mpgyi</span>
+
+</body>
+
+</html>

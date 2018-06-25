@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>Dimension by HTML5 UP</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="../static/css/layui.css"/>
+    <link rel="stylesheet" href="../static/css/index/main.css"/>
+    <link type="favicon" rel="shortcut icon" href="../static/favicon.ico"/>
+    <!--[if lte IE 9]><link rel="stylesheet" href="../static/css/index/ie9.css" /><![endif]-->
+    <noscript>
+        <link rel="stylesheet" href="../static/css/index/noscript.css"/>
+    </noscript>
+</head>
+<body>
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="logo">
+            <span class="icon fa-diamond"></span>
+        </div>
+        <div class="content">
+            <div class="inner">
+                <h1>Dimension</h1>
+                <p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and
+                    released<br/>
+                    for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#login">登陆</a></li>
+                {#								<li><a href="#intro">简介</a></li>#}
+                <li><a href="#SignUp">注册</a></li>
+                {#								<li><a href="#about">About</a></li>#}
+                {#								<li><a href="#contact">Contact</a></li>#}
+                <!--<li><a href="#elements">Elements</a></li>-->
+                <li><a href="#timeline">工作日志</a></li>
+            </ul>
+            {#                            <ul><li><a href="index">123</a> </li></ul>#}
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Intro -->
+        <article id="intro">
+            <h1 class="major">Intro</h1>
+            <span class="image main"><img src="../static/image/index/pic01.jpg" alt=""/></span>
+            <p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue.
+                Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus
+                nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome
+                    work</a>.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
+                taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu
+                nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies
+                condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem
+                mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et
+                netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque
+                aliquam maximus risus, vel sed vehicula.</p>
+        </article>
+
+        <!-- SignUp -->
+        <article id="SignUp">
+            <h1 class="major">注册</h1>
+            <!--suppress HtmlUnknownTarget -->
+            <form id="signUpForm" action="/signup" method="post">
+                <p><label>用户名<span></span>
+                    <input id="signupUsername" name="username" type="text"/>
+                </label></p>
+                <p><label>密码<span></span>
+                    <input id="password" name="password" type="password"/>
+                </label></p>
+                <p><label>请再次输入密码<span></span>
+                    <input id="password2" name="password2" type="password"/>
+                </label></p>
+                <P>
+                    <button type="submit">注册</button>
+                    <button type="reset">重置</button>
+                </P>
+            </form>
+        </article>
+
+        <!-- Login -->
+        <article id="login">
+            <h1 class="major">登陆</h1>
+            <!--suppress HtmlUnknownTarget -->
+            <form name="form1" action="/login" method="post" onclick="function doLogin() {
+            return undefined;
+            }
+            return doLogin();">
+                <p><label>用户名
+                    <input name="username" type="text"/>
+                </label></p>
+                <p><label>密码
+                    <input name="password" type="password"/>
+                </label></p>
+                <p>
+                    <button id="login-button" type="submit">登陆</button>
+                    <button type="reset">重置</button>
+                    <button><a href=" #SignUp">注册</a></button>
+                </p>
+            </form>
+        </article>
+
+        <!-- Username is null -->
+        <article id="UserNameIsNull">
+            <h1 class="major">用户名不能为空！</h1>
+            <button><a href="#login">返回</a></button>
+        </article>
+
+        <article id="PwdIsNull">
+            <h1 class="major">密码不能为空！</h1>
+            <button><a href="#login">返回</a></button>
+        </article>
+
+        <article id="loginSuccess">
+            <h1 class="major">登陆成功！</h1>
+        </article>
+
+        <article id="loginFailure">
+            <h1 class="major">用户名或密码错误！</h1>
+            <button><a href="#login">返回</a></button>
+        </article>
+
+        <!-- Work -->
+        <article id="work">
+            <h2 class="major">Work</h2>
+            <span class="image main"><img src="../static/image/index/pic02.jpg" alt=""/></span>
+            <p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac.
+                Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin
+                mauris nec lorem luctus ultrices.</p>
+            <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed
+                nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet
+                massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus
+                et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+        </article>
+
+        <!-- About -->
+        <article id="about">
+            <h2 class="major">About</h2>
+            <span class="image main"><img src="../static/image/index/pic03.jpg" alt=""/></span>
+            <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend
+                sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam.
+                Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum
+                primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+        </article>
+
+        <!-- Contact -->
+        <article id="contact">
+            <h2 class="major">Contact</h2>
+            <form method="post" action="#">
+                <div class="field half first">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+                <div class="field half">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email"/>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" class="special"/></li>
+                    <li><input type="reset" value="Reset"/></li>
+                </ul>
+            </form>
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+            </ul>
+        </article>
+
+        <!-- Timeline -->
+        <article id="timeline">
+            <h1 class="major">工作日志</h1>
+            <div>
+                <h2>2018-06-12</h2>
+                <ul>
+                    <li>&bull; 完善注册&登陆细节，增加报错功能</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2018-06-11</h2>
+                <ul>
+                    <li>&bull; 完成注册模块</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2018-06-10</h2>
+                <ul>
+                    <li>&bull; 使用 <i>sqlite3</i> 作为网站的数据库</li>
+                    <li>&bull; 完成登陆模块</li>
+                </ul>
+            </div>
+            <div>
+                <h2>2018-06-09</h2>
+                <ul>
+                    <li>&bull; 使用 <i>python 3.6</i> && <i>flask 1.0</i> 作为网站基础架构</li>
+                    <li>&bull; 使用 <i><a href="https://html5up.net">HTML5 UP</a></i> 网站上的 <i>DIMENSION</i>
+                        模板作为网站的首页
+                    </li>
+                    <li>&bull; 将背景更换为 <i>Fate/Stay Night Heaven's Feel</i> 的剧照</li>
+                    <li>&bull; 增加工作日志记录每天的工作量</li>
+                </ul>
+            </div>
+
+        </article>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <p class="copyright">&copy; Yukint Inc. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+    </footer>
+
+</div>
+
+<!-- BG -->
+<div id="bg"></div>
+
+<!-- Scripts -->
+<script src="../static/js/jquery.min.js"></script>
+<script src="../static/js/index/skel.min.js"></script>
+<script src="../static/js/index/util.js"></script>
+<script src="../static/js/index/main.js"></script>
+<script src="../static/js/index/myJs.js"></script>
+</body>
+</html>

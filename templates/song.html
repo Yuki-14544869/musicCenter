@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://fly.lse.dog/user -->
+<html lang="zh-cn" class=" no-touchevents">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+    <meta name="theme-color" content="#ff9800">
+    <title>围墙 - 海外服游戏加速</title>
+    <!-- css -->
+    <link href="../static/css/lse/base.min.css" rel="stylesheet">
+    <link href="../static/css/lse/project.min.css" rel="stylesheet">
+    <link href="../static/css/lse/css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css?family=Material+Icons">
+    <link type="favicon" rel="shortcut icon" href="../static/favicon.ico"/>
+    <style>
+        body {
+            background: #eee;
+        }
+
+        @keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                transform: rotate(1080deg);
+            }
+            100% {
+                transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-webkit-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -webkit-transform: rotate(1080deg);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-moz-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -moz-transform: rotate(1080deg);
+            }
+            100% {
+                -moz-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-ms-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -ms-transform: rotate(1080deg);
+            }
+            100% {
+                -ms-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-o-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -o-transform: rotate(1080deg);
+            }
+            100% {
+                -o-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+    </style>
+
+
+    <!-- favicon -->
+    <!-- ... -->
+    <style>
+
+        .pagination > li {
+            display: inline
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #337ab7;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd
+        }
+
+        .pagination > li:first-child > a,
+        .pagination > li:first-child > span {
+            margin-left: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px
+        }
+
+        .pagination > li:last-child > a,
+        .pagination > li:last-child > span {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px
+        }
+
+        .pagination > li > a:focus,
+        .pagination > li > a:hover,
+        .pagination > li > span:focus,
+        .pagination > li > span:hover {
+            color: #23527c;
+            background-color: #eee;
+            border-color: #ddd
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: #337ab7;
+            border-color: #337ab7
+        }
+
+        .pagination > .disabled > a,
+        .pagination > .disabled > a:focus,
+        .pagination > .disabled > a:hover,
+        .pagination > .disabled > span,
+        .pagination > .disabled > span:focus,
+        .pagination > .disabled > span:hover {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff;
+            border-color: #ddd
+        }
+
+        .pagination-lg > li > a,
+        .pagination-lg > li > span {
+            padding: 10px 16px;
+            font-size: 18px
+        }
+
+        .pagination-lg > li:first-child > a,
+        .pagination-lg > li:first-child > span {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px
+        }
+
+        .pagination-lg > li:last-child > a,
+        .pagination-lg > li:last-child > span {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px
+        }
+
+        .pagination-sm > li > a,
+        .pagination-sm > li > span {
+            padding: 5px 10px;
+            font-size: 12px
+        }
+
+        .pagination-sm > li:first-child > a,
+        .pagination-sm > li:first-child > span {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px
+        }
+
+        .pagination-sm > li:last-child > a,
+        .pagination-sm > li:last-child > span {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px
+        }
+
+        .pager li {
+            display: inline
+        }
+
+        .pager li > a,
+        .pager li > span {
+            display: inline-block;
+            padding: 5px 14px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px
+        }
+
+        .pager li > a:focus,
+        .pager li > a:hover {
+            text-decoration: none;
+            background-color: #eee
+        }
+
+        .pager .next > a,
+        .pager .next > span {
+            float: right
+        }
+
+        .pager .previous > a,
+        .pager .previous > span {
+            float: left
+        }
+
+        .pager .disabled > a,
+        .pager .disabled > a:focus,
+        .pager .disabled > a:hover,
+        .pager .disabled > span {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            border: 1px solid white;
+        }
+
+        .pagination > li.active > a {
+            background: #f50057;
+            color: #fff;
+        }
+
+        .pagination > li > a {
+            background: white;
+            color: #000;
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+        }
+
+        .pagination > .active > span {
+            background-color: #f50057;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .pagination > .disabled > span {
+            border-color: #fff;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .page-orange .ui-content-header {
+            background-image: url(https://cdn.jsdelivr.net/gh/sspuic/p@0x01/public/theme/material/css/images/bg/amber.jpg);
+        }
+
+        .content-heading {
+            font-weight: 300;
+            color: #fff;
+        }
+    </style>
+
+
+    <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
+    <script src="../static/js/lse/l.js" async=""></script>
+    <script src="../static/js/lse/client.js" type="text/javascript" async=""></script>
+    <link href="../static/css/lse/client_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="page-orange">
+<header class="header header-orange header-transparent header-waterfall ui-header affix-top">
+    <ul class="nav nav-list pull-left">
+        <div>
+            <a data-toggle="menu" href="https://fly.lse.dog/user#ui_menu">
+                <span class="icon icon-lg text-white">format_align_justify</span>
+            </a>
+        </div>
+    </ul>
+
+    <ul class="nav nav-list pull-right">
+        <div class="dropdown margin-right">
+            <a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+                <span class="access-hide">yukint</span>
+                <span class="avatar avatar-sm">
+                        <img alt="alt text for John Smith avatar"
+                             src="../static/image/lse/e759980aadfd244969bdf1048bd27848.jpg">
+                    </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    <a class="padding-right-lg waves-attach waves-effect" href="/lse">
+                        <span class="icon icon-lg margin-right">account_box</span>用户中心</a>
+                </li>
+
+                <li>
+                    <a class="padding-right-cd waves-attach waves-effect" href="https://fly.lse.dog/user/logout">
+                        <span class="icon icon-lg margin-right">exit_to_app</span>登出</a>
+                </li>
+            </ul>
+
+        </div>
+    </ul>
+</header>
+<nav aria-hidden="true" class="menu menu-left nav-drawer nav-drawer-md" id="ui_menu" tabindex="-1">
+    <div class="menu-scroll">
+        <div class="menu-content">
+            <!--suppress HtmlUnknownTarget -->
+            <a class="menu-logo" href="/lse">
+                <i class="icon icon-lg">language</i>&nbsp;围墙</a>
+            <ul class="nav">
+                <li>
+                    <a class="waves-attach waves-effect" data-toggle="collapse"
+                       href="https://fly.lse.dog/user#ui_menu_me">我的</a>
+                    <ul class="menu-collapse collapse in" id="ui_menu_me">
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/lse">
+                                <i class="icon icon-lg">account_balance_wallet</i>&nbsp;用户中心
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/album">
+                                <i class="icon icon-lg">account_box</i>&nbsp;专辑
+                            </a>
+                        </li>
+
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/song">
+                                <i class="icon icon-lg">sync_problem</i>&nbsp;歌曲
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/ticket">
+                                <i class="icon icon-lg">question_answer</i>&nbsp;工单系统
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://fly.lse.dog/user/invite">
+                                <i class="icon icon-lg">loyalty</i>&nbsp;邀请链接
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                    <a class="waves-attach waves-effect" data-toggle="collapse"
+                       href="https://fly.lse.dog/user#ui_menu_help">商店</a>
+                    <ul class="menu-collapse collapse in" id="ui_menu_help">
+                        <li>
+                            <a href="https://fly.lse.dog/user/code">
+                                <i class="icon icon-lg">code</i>&nbsp;充值
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/shop">
+                                <i class="icon icon-lg">shop</i>&nbsp;套餐购买
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/bought">
+                                <i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/donate">
+                                <i class="icon icon-lg">attach_money</i>&nbsp;捐赠公示
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li>
+                    <div class="divcss5">
+                        <img src="../static/image/lse/Ambassador-menu.png" width="230" height="300">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main class="content">
+
+    <div class="content-header ui-content-header">
+        <div class="container">
+            <h1 class="content-heading">歌曲</h1>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-lg-12 col-sm-12">
+            <section class="content-inner margin-top-no">
+
+                {#					<div class="card">#}
+                {#						<div class="card-main">#}
+                {#							<div class="card-inner">#}
+                {#								<p>所有商品可以叠加购买，VIP时间会叠加</p>#}
+                {#								<p>当前余额：0.00 元</p>#}
+                {#							</div>#}
+                {#						</div>#}
+                {#					</div>#}
+
+
+                <div class="table-responsive">
+
+                    <table class="table ">
+                        <tbody>
+                        <tr>
+                            <th>套餐</th>
+                            <th>价格</th>
+                            <th>套餐详情</th>
+                            <th>操作</th>
+
+                        </tr>
+                        <tr>
+                            <td>测试专用商品</td>
+                            <td>1.00 元</td>
+                            <td>添加流量 1 G , 为账号的有效期添加 1 天 , 为账号升级为等级 3 , 有效期 1 天 , 用户端口限速变为20 Mbps , 用户IP限制变为 1 个</td>
+                            <td>
+                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('1',0,0)">购买</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>月付标准流量</td>
+                            <td>12.00 元</td>
+                            <td>添加流量 512 G , 为账号的有效期添加 30 天 , 为账号升级为等级 2 , 有效期 30 天 , 用户端口限速变为50 Mbps , 用户IP限制变为 1 个
+                            </td>
+                            <td>
+                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('2',0,0)">购买</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>月付高速流量</td>
+                            <td>22.00 元</td>
+                            <td>添加流量 1024 G , 为账号的有效期添加 30 天 , 为账号升级为等级 2 , 有效期 30 天 , 用户端口限速变为100 Mbps , 用户IP限制变为 1 个
+                            </td>
+                            <td>
+                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('3',0,0)">购买</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>季付标准流量</td>
+                            <td>40.00 元</td>
+                            <td>添加流量 512 G , 为账号的有效期添加 90 天 , 为账号升级为等级 2 , 有效期 90 天 , 在 89 天内 ，每 30 天重置流量为 512 G ,
+                                用户端口限速变为100 Mbps , 用户IP限制变为 1 个
+                            </td>
+                            <td>
+                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('4',0,0)">购买</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>季付高速流量</td>
+                            <td>122.00 元</td>
+                            <td>添加流量 1024 G , 为账号的有效期添加 90 天 , 为账号升级为等级 3 , 有效期 90 天 , 在 89 天内 ，每 30 天重置流量为 1024 G ,
+                                用户端口限速变为150 Mbps , 用户IP限制变为 1 个
+                            </td>
+                            <td>
+                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('5',0,0)">购买</a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+
+                </div>
+
+
+                <div aria-hidden="true" class="modal modal-va-middle fade" id="coupon_modal" role="dialog"
+                     tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <div class="modal-heading">
+                                <a class="modal-close" data-dismiss="modal">×</a>
+                                <h2 class="modal-title">您有优惠码吗？</h2>
+                            </div>
+                            <div class="modal-inner">
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="coupon">有的话，请在这里输入。没有的话，直接确定吧</label>
+                                    <input class="form-control" id="coupon" type="text">
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <button class="btn btn-flat btn-brand waves-attach waves-effect"
+                                            data-dismiss="modal" id="coupon_input" type="button">确定
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div aria-hidden="true" class="modal modal-va-middle fade" id="order_modal" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <div class="modal-heading">
+                                <a class="modal-close" data-dismiss="modal">×</a>
+                                <h2 class="modal-title">订单确认</h2>
+                            </div>
+                            <div class="modal-inner">
+                                <p id="name">商品名称：</p>
+                                <p id="credit">优惠额度：</p>
+                                <p id="total">总金额：</p>
+                                <p id="auto_reset">在到期时自动续费</p>
+
+                                <div class="checkbox switch" id="autor">
+                                    <label for="autorenew">
+                                        <input checked="" class="access-hide" id="autorenew" type="checkbox"><span
+                                            class="switch-toggle"></span>自动续费
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <button class="btn btn-flat btn-brand waves-attach waves-effect"
+                                            data-dismiss="modal" id="order_input" type="button">确定
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div aria-hidden="true" class="modal modal-va-middle fade" id="result" role="dialog" tabindex="-1">
+                    <div class="modal-dialog modal-xs">
+                        <div class="modal-content">
+                            <div class="modal-inner">
+                                <p class="h5 margin-top-sm text-black-hint" id="msg"></p>
+                            </div>
+                            <div class="modal-footer">
+                                <p class="text-right">
+                                    <button class="btn btn-flat btn-brand-accent waves-attach waves-effect"
+                                            data-dismiss="modal" type="button" id="result_ok">知道了
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+
+
+    </div>
+
+
+</main>
+
+
+<footer class="ui-footer">
+    <div class="container">
+        <marquee>© 围墙
+            <a href="https://fly.lse.dog/staff">STAFF</a>&nbsp;如果还有来生 ，我无论如何都要来到你身边，我已经没有了其他想要追求的东西，因为没有比你更重要的了。
+        </marquee>
+
+
+        <!-- js -->
+        <script src="../static/js/jquery.min.js" type=""></script>
+        <script src="../static/js/lse/jquery.validate.min.js" type=""></script>
+        <script src="../static/js/lse/gt.js" type=""></script>
+
+        <script src="../static/js/lse/base.min.js" type=""></script>
+        <script src="../static/js/lse/project.min.js" type=""></script>
+        <script src="../static/js/lse/clipboard.min.js" type=""></script>
+        <!--script type="text/javascript" color="217,113,24" opacity="0.8" count="99" src="/assets/js/canvas-nest.min.js"></script-->
+
+
+        <script src="../static/js/lse/shake.js" type=""></script>
+
+        <script type="">
+
+            function DateParse(str_date) {
+                let str_date_splited = str_date.split(/[^0-9]/);
+                return new Date(str_date_splited[0], str_date_splited[1] - 1, str_date_splited[2], str_date_splited[3], str_date_splited[4], str_date_splited[5]);
+            }
+
+            /*
+             * Author: neoFelhz & CloudHammer
+             * https://github.com/CloudHammer/CloudHammer/make-sspanel-v3-mod-great-again
+             * License: MIT license & SATA license
+             */
+            function CountDown() {
+                let levelExpire = DateParse("2018-05-28 02:21:05");
+                let accountExpire = DateParse("2028-05-24 02:21:05");
+                let nowDate = new Date();
+                let a = nowDate.getTime();
+                let b = levelExpire - a;
+                let c = accountExpire - a;
+                let levelExpireDays = Math.floor(b / (24 * 3600 * 1000));
+                let accountExpireDays = Math.floor(c / (24 * 3600 * 1000));
+                if (levelExpireDays < 0 || levelExpireDays > 315360000000) {
+                    document.getElementById('days-level-expire').innerHTML = "无限期";
+                    for (let i = 0; i < document.getElementsByClassName('label-level-expire').length; i += 1) {
+                        document.getElementsByClassName('label-level-expire')[i].style.display = 'none';
+                    }
+                } else {
+                    document.getElementById('days-level-expire').innerHTML = levelExpireDays;
+                }
+                if (accountExpireDays < 0 || accountExpireDays > 315360000000) {
+                    document.getElementById('days-account-expire').innerHTML = "无限期";
+                    for (let i = 0; i < document.getElementsByClassName('label-account-expire').length; i += 1) {
+                        document.getElementsByClassName('label-account-expire')[i].style.display = 'none';
+                    }
+                } else {
+                    document.getElementById('days-account-expire').innerHTML = accountExpireDays;
+                }
+            }
+        </script>
+
+
+        <script type="">
+
+            $(function () {
+                new Clipboard('.copy-text');
+            });
+
+            $(".copy-text").click(function () {
+                $("#result").modal();
+                $("#msg").html("已拷贝订阅链接，请您继续接下来的操作。");
+            });
+            $(function () {
+                new Clipboard('.reset-link');
+            });
+
+            $(".reset-link").click(function () {
+                $("#result").modal();
+                $("#msg").html("已重置您的订阅链接，请变更或添加您的订阅链接！");
+                window.setTimeout("location.href='/user/url_reset'", 1200);
+            });
+
+
+            window.onload = function () {
+                let myShakeEvent = new Shake({
+                    threshold: 15
+                });
+
+                myShakeEvent.start();
+                CountDown();
+
+                window.addEventListener('shake', shakeEventDidOccur, false);
+
+                function shakeEventDidOccur() {
+                    if ("vibrate" in navigator) {
+                        navigator.vibrate(500);
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/checkin",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#checkin-msg").html(data.msg);
+                            $("#checkin-btn").hide();
+                            $("#result").modal();
+                            $("#msg").html(data.msg);
+                        },
+                        error: function (jqXHR) {
+                            $("#result").modal();
+                            $("#msg").html("发生错误：" + jqXHR.status);
+                        }
+                    });
+                }
+            };
+
+
+            $(document).ready(function () {
+                $("#checkin").click(function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/checkin",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#checkin-msg").html(data.msg);
+                            $("#checkin-btn").hide();
+                            $("#result").modal();
+                            $("#msg").html(data.msg);
+                        },
+                        error: function (jqXHR) {
+                            $("#result").modal();
+                            $("#msg").html("发生错误：" + jqXHR.status);
+                        }
+                    })
+                })
+            })
+
+
+        </script>
+    </div>
+</footer>
+<span style="position: absolute; left: 0; top: -20000px; padding: 0; margin: 0; border: none; white-space: pre; line-height: normal; font-family: Garamond, serif; font-size: 20px; font-weight: normal; display: none;">Mpgyi</span>
+
+</body>
+
+</html>

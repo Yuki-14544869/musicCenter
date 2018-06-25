@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://fly.lse.dog/user -->
+<!--suppress HtmlUnknownTarget -->
+<html lang="zh-cn" class=" no-touchevents">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+    <meta name="theme-color" content="#ff9800">
+    <title>围墙 - 海外服游戏加速</title>
+    <!-- css -->
+    <link href="../static/css/lse/base.min.css" rel="stylesheet">
+    <link href="../static/css/lse/project.min.css" rel="stylesheet">
+    <link href="../static/css/lse/css" rel="stylesheet">
+    <link href="https://fonts.loli.net/css?family=Material+Icons">
+    <link type="favicon" rel="shortcut icon" href="../static/favicon.ico"/>
+    <style>
+        body {
+            background: #eee;
+        }
+
+        @keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                transform: rotate(1080deg);
+            }
+            100% {
+                transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-webkit-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -webkit-transform: rotate(1080deg);
+            }
+            100% {
+                -webkit-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-moz-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -moz-transform: rotate(1080deg);
+            }
+            100% {
+                -moz-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-ms-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -ms-transform: rotate(1080deg);
+            }
+            100% {
+                -ms-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+        @-o-keyframes mysnow {
+            0% {
+                bottom: 100%;
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                -o-transform: rotate(1080deg);
+            }
+            100% {
+                -o-transform: rotate(0deg);
+                opacity: 0;
+                bottom: 0;
+            }
+        }
+
+    </style>
+
+
+    <!-- favicon -->
+    <!-- ... -->
+    <style>
+
+        .pagination > li {
+            display: inline
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            position: relative;
+            float: left;
+            padding: 6px 12px;
+            margin-left: -1px;
+            line-height: 1.42857143;
+            color: #337ab7;
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #ddd
+        }
+
+        .pagination > li:first-child > a,
+        .pagination > li:first-child > span {
+            margin-left: 0;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px
+        }
+
+        .pagination > li:last-child > a,
+        .pagination > li:last-child > span {
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px
+        }
+
+        .pagination > li > a:focus,
+        .pagination > li > a:hover,
+        .pagination > li > span:focus,
+        .pagination > li > span:hover {
+            color: #23527c;
+            background-color: #eee;
+            border-color: #ddd
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            z-index: 2;
+            color: #fff;
+            cursor: default;
+            background-color: #337ab7;
+            border-color: #337ab7
+        }
+
+        .pagination > .disabled > a,
+        .pagination > .disabled > a:focus,
+        .pagination > .disabled > a:hover,
+        .pagination > .disabled > span,
+        .pagination > .disabled > span:focus,
+        .pagination > .disabled > span:hover {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff;
+            border-color: #ddd
+        }
+
+        .pagination-lg > li > a,
+        .pagination-lg > li > span {
+            padding: 10px 16px;
+            font-size: 18px
+        }
+
+        .pagination-lg > li:first-child > a,
+        .pagination-lg > li:first-child > span {
+            border-top-left-radius: 6px;
+            border-bottom-left-radius: 6px
+        }
+
+        .pagination-lg > li:last-child > a,
+        .pagination-lg > li:last-child > span {
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px
+        }
+
+        .pagination-sm > li > a,
+        .pagination-sm > li > span {
+            padding: 5px 10px;
+            font-size: 12px
+        }
+
+        .pagination-sm > li:first-child > a,
+        .pagination-sm > li:first-child > span {
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px
+        }
+
+        .pagination-sm > li:last-child > a,
+        .pagination-sm > li:last-child > span {
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px
+        }
+
+        .pager li {
+            display: inline
+        }
+
+        .pager li > a,
+        .pager li > span {
+            display: inline-block;
+            padding: 5px 14px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 15px
+        }
+
+        .pager li > a:focus,
+        .pager li > a:hover {
+            text-decoration: none;
+            background-color: #eee
+        }
+
+        .pager .next > a,
+        .pager .next > span {
+            float: right
+        }
+
+        .pager .previous > a,
+        .pager .previous > span {
+            float: left
+        }
+
+        .pager .disabled > a,
+        .pager .disabled > a:focus,
+        .pager .disabled > a:hover,
+        .pager .disabled > span {
+            color: #777;
+            cursor: not-allowed;
+            background-color: #fff
+        }
+
+        .pagination > li > a,
+        .pagination > li > span {
+            border: 1px solid white;
+        }
+
+        .pagination > li.active > a {
+            background: #f50057;
+            color: #fff;
+        }
+
+        .pagination > li > a {
+            background: white;
+            color: #000;
+        }
+
+        .pagination > .active > a,
+        .pagination > .active > a:focus,
+        .pagination > .active > a:hover,
+        .pagination > .active > span,
+        .pagination > .active > span:focus,
+        .pagination > .active > span:hover {
+            color: #fff;
+            background-color: #000;
+            border-color: #000;
+        }
+
+        .pagination > .active > span {
+            background-color: #f50057;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        .pagination > .disabled > span {
+            border-color: #fff;
+        }
+
+        pre {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        .page-orange .ui-content-header {
+            background-image: url(https://cdn.jsdelivr.net/gh/sspuic/p@0x01/public/theme/material/css/images/bg/amber.jpg);
+        }
+
+        .content-heading {
+            font-weight: 300;
+            color: #fff;
+        }
+    </style>
+
+
+    <link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">
+    <script src="../static/js/lse/l.js" async=""></script>
+    <script src="../static/js/lse/client.js" type="text/javascript" async=""></script>
+    <link href="../static/css/lse/client_default.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="page-orange">
+<header class="header header-orange header-transparent header-waterfall ui-header affix-top">
+    <ul class="nav nav-list pull-left">
+        <div>
+            <a data-toggle="menu" href="https://fly.lse.dog/user#ui_menu">
+                <span class="icon icon-lg text-white">format_align_justify</span>
+            </a>
+        </div>
+    </ul>
+
+    <ul class="nav nav-list pull-right">
+        <div class="dropdown margin-right">
+            <a class="dropdown-toggle padding-left-no padding-right-no" data-toggle="dropdown">
+                <span class="access-hide">yukint</span>
+                <span class="avatar avatar-sm">
+                        <img alt="alt text for John Smith avatar"
+                             src="../static/image/lse/e759980aadfd244969bdf1048bd27848.jpg">
+                    </span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right">
+                <li>
+                    <a class="padding-right-lg waves-attach waves-effect" href="/lse">
+                        <span class="icon icon-lg margin-right">account_box</span>用户中心</a>
+                </li>
+
+                <li>
+                    <a class="padding-right-cd waves-attach waves-effect" href="https://fly.lse.dog/user/logout">
+                        <span class="icon icon-lg margin-right">exit_to_app</span>登出</a>
+                </li>
+            </ul>
+
+        </div>
+    </ul>
+</header>
+<nav aria-hidden="true" class="menu menu-left nav-drawer nav-drawer-md" id="ui_menu" tabindex="-1">
+    <div class="menu-scroll">
+        <div class="menu-content">
+            <!--suppress HtmlUnknownTarget -->
+            <a class="menu-logo" href="/lse">
+                <i class="icon icon-lg">language</i>&nbsp;围墙</a>
+            <ul class="nav">
+                <li>
+                    <a class="waves-attach waves-effect" data-toggle="collapse"
+                       href="https://fly.lse.dog/user#ui_menu_me">我的</a>
+                    <ul class="menu-collapse collapse in" id="ui_menu_me">
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/lse">
+                                <i class="icon icon-lg">account_balance_wallet</i>&nbsp;用户中心
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/album">
+                                <i class="icon icon-lg">account_box</i>&nbsp;专辑
+                            </a>
+                        </li>
+
+                        <li>
+                            <!--suppress HtmlUnknownTarget -->
+                            <a href="/song">
+                                <i class="icon icon-lg">sync_problem</i>&nbsp;歌曲
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/ticket">
+                                <i class="icon icon-lg">question_answer</i>&nbsp;工单系统
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://fly.lse.dog/user/invite">
+                                <i class="icon icon-lg">loyalty</i>&nbsp;邀请链接
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+
+                    <a class="waves-attach waves-effect" data-toggle="collapse"
+                       href="https://fly.lse.dog/user#ui_menu_help">商店</a>
+                    <ul class="menu-collapse collapse in" id="ui_menu_help">
+                        <li>
+                            <a href="https://fly.lse.dog/user/code">
+                                <i class="icon icon-lg">code</i>&nbsp;充值
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/shop">
+                                <i class="icon icon-lg">shop</i>&nbsp;套餐购买
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/bought">
+                                <i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://fly.lse.dog/user/donate">
+                                <i class="icon icon-lg">attach_money</i>&nbsp;捐赠公示
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </li>
+                <li>
+                    <div class="divcss5">
+                        <img src="../static/image/lse/Ambassador-menu.png" width="230" height="300">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<main class="content">
+
+    <div class="content-header ui-content-header">
+        <div class="container">
+            <h1 class="content-heading">专辑</h1>
+        </div>
+    </div>
+    <div class="container">
+        <section class="content-inner margin-top-no">
+
+
+            <div class="col-lg-6 col-md-6">
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">账号登录密码修改</p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="oldpwd">当前密码</label>
+                                    <input class="form-control" id="oldpwd" type="password">
+                                </div>
+
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="pwd">新密码</label>
+                                    <input class="form-control" id="pwd" type="password">
+                                </div>
+
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="repwd">确认新密码</label>
+                                    <input class="form-control" id="repwd" type="password">
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach waves-effect" id="pwd-update"><span
+                                            class="icon">check</span>&nbsp;提交
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">节点连接密码修改</p>
+                                <p>当前连接密码：<code>OnW6oFbiye.la</code>
+                                    <button class="kaobei copy-text btn btn-subscription" type="button"
+                                            data-clipboard-text="OnW6oFbiye.la">点击拷贝
+                                    </button>
+                                </p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="sspwd">新连接密码</label>
+                                    <input class="form-control" id="sspwd" type="text">
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach waves-effect" id="ss-pwd-update"><span
+                                            class="icon">check</span>&nbsp;提交
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">重置端口</p>
+                                <p>随机更换一个端口使用</p>
+                                <p>重置后1分钟内生效</p>
+                                <p>当前端口：<code>53555</code></p>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach waves-effect" id="portreset"><span
+                                            class="icon">check</span>&nbsp;重置端口
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">加密方式修改</p>
+                                <p>注意：SS 和 SSR 支持的加密方式有所不同，请根据实际情况来进行选择！</p>
+                                <p>当前加密方式：<code>chacha20-ietf</code></p>
+                                <div class="form-group form-group-label control-highlight">
+                                    <label class="floating-label" for="method">加密方式</label>
+                                    <select id="method" class="form-control">
+                                        <option value="rc4-md5">[SS/SSR 可连接] rc4-md5</option>
+                                        <option value="rc4-md5-6">[SS/SSR 可连接] rc4-md5-6</option>
+                                        <option value="aes-128-cfb">[SS/SSR 可连接] aes-128-cfb</option>
+                                        <option value="aes-192-cfb">[SS/SSR 可连接] aes-192-cfb</option>
+                                        <option value="aes-256-cfb">[SS/SSR 可连接] aes-256-cfb</option>
+                                        <option value="aes-128-ctr">[SS/SSR 可连接] aes-128-ctr</option>
+                                        <option value="aes-192-ctr">[SS/SSR 可连接] aes-192-ctr</option>
+                                        <option value="aes-256-ctr">[SS/SSR 可连接] aes-256-ctr</option>
+                                        <option value="camellia-128-cfb">[SS/SSR 可连接] camellia-128-cfb</option>
+                                        <option value="camellia-192-cfb">[SS/SSR 可连接] camellia-192-cfb</option>
+                                        <option value="camellia-256-cfb">[SS/SSR 可连接] camellia-256-cfb</option>
+                                        <option value="bf-cfb">[SS/SSR 可连接] bf-cfb</option>
+                                        <option value="cast5-cfb">[SS/SSR 可连接] cast5-cfb</option>
+                                        <option value="des-cfb">[SS/SSR 可连接] des-cfb</option>
+                                        <option value="des-ede3-cfb">[SS/SSR 可连接] des-ede3-cfb</option>
+                                        <option value="idea-cfb">[SS/SSR 可连接] idea-cfb</option>
+                                        <option value="rc2-cfb">[SS/SSR 可连接] rc2-cfb</option>
+                                        <option value="seed-cfb">[SS/SSR 可连接] seed-cfb</option>
+                                        <option value="salsa20">[SS/SSR 可连接] salsa20</option>
+                                        <option value="chacha20">[SS/SSR 可连接] chacha20</option>
+                                        <option value="chacha20-ietf" selected="selected">[SS/SSR 可连接] chacha20-ietf
+                                        </option>
+                                        <option value="none">[SS/SSR 可连接] none</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach waves-effect" id="method-update"><span
+                                            class="icon">check</span>&nbsp;提交
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">联络方式修改</p>
+                                <p>当前联络方式：
+
+
+
+                                                                        Telegram
+
+                                yukint</p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="imtype">选择您的联络方式</label>
+                                    <select class="form-control" id="imtype">
+                                        <option></option>
+                                        <option value="1">微信</option>
+                                        <option value="2">QQ</option>
+                                        <option value="3">Google+</option>
+                                        <option value="4">Telegram</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="wechat">在这输入联络方式账号</label>
+                                    <input class="form-control" id="wechat" type="text">
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach" id="wechat-update" ><span class="icon">check</span>&nbsp;提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!--div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">协议&混淆设置</p>
+                                <p>当前协议：auth_aes128_md5</p>
+                                <p>注意1：如果需要兼容原版SS请选择带_compatible的兼容选项！</p>
+                                <p>注意2：如果您使用原版 SS 客户端此处请直接设置为 origin！</p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="protocol">协议</label>
+                                    <select id="protocol" class="form-control">
+                                                                                                                                            <option value="auth_aes128_md5" selected="selected">[SSR 可连接] auth_aes128_md5</option>
+
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div class="card-inner">
+                                <p>当前混淆方式：http_simple</p>
+                                <p>注意1：如果需要兼容原版SS请选择带_compatible的兼容选项！</p>
+                                <p>注意2：SS 和 SSR 支持的混淆类型有所不同，simple_obfs_* 为原版 SS 的混淆方式，其他为 SSR 的混淆方式！</p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="obfs">混淆方式</label>
+                                    <select id="obfs" class="form-control">
+                                                                                                                                                                                                                                        <option value="http_simple" selected="selected">[SSR 可连接] http_simple</option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach"><span class="icon">check</span>&nbsp;不可修改</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+
+
+                <!--div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">主题修改</p>
+                                <p>当前主题：material</p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="theme">主题</label>
+                                    <select id="theme" class="form-control">
+                                                                                            <option value="material">material</option>
+
+                                    </select>
+                                </div>
+
+
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach" id="theme-update" ><span class="icon">check</span>&nbsp;提交</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+</div-->
+
+
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">每日邮件接收设置</p>
+                                <p>当前设置： 发送 </p>
+                                <div class="form-group form-group-label control-highlight">
+                                    <label class="floating-label" for="mail">发送设置</label>
+                                    <select id="mail" class="form-control">
+                                        <option value="1">发送</option>
+                                        <option value="0">不发送</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach waves-effect" id="mail-update"><span
+                                            class="icon">check</span>&nbsp;提交
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-lg-6 col-md-6">
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">IP解封</p>
+                                <p>当前状态：IP: 221.212.116.25 没有被封</p>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach waves-effect" id="unblock"><span
+                                            class="icon">check</span>&nbsp;解封
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">两步验证</p>
+                                <p>请下载 Google 的两步验证器，扫描下面的二维码。</p>
+                                <p><i class="icon icon-lg" aria-hidden="true">android</i><a
+                                        href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">&nbsp;Android</a>
+                                </p>
+                                <p><i class="icon icon-lg" aria-hidden="true">tablet_mac</i><a
+                                        href="https://itunes.apple.com/cn/app/google-authenticator/id388497605?mt=8">&nbsp;iOS</a>
+                                </p>
+                                <p>在没有测试完成绑定成功之前请不要启用。</p>
+                                <p>当前设置： 不要求 </p>
+                                <p>当前服务器时间：2018-06-23 15:52:18</p>
+                                <div class="form-group form-group-label control-highlight">
+                                    <label class="floating-label" for="ga-enable">验证设置</label>
+                                    <select id="ga-enable" class="form-control">
+                                        <option value="0">不要求</option>
+                                        <option value="1">要求验证</option>
+                                    </select>
+                                </div>
+
+
+                                <div class="form-group form-group-label">
+                                    <div class="text-center">
+                                        <div id="ga-qr">
+                                            <canvas width="200" height="200"></canvas>
+                                        </div>
+                                        密钥：NQOXWTHWXNLPMYUE
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="code">测试一下</label>
+                                    <input type="text" id="code" placeholder="输入验证器生成的数字来测试" class="form-control">
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <a class="btn btn-brand-accent btn-flat waves-attach waves-effect"
+                                       href="/user/gareset"><span class="icon">format_color_reset</span>&nbsp;重置</a>
+                                    <button class="btn btn-flat waves-attach waves-effect" id="ga-test"><span
+                                            class="icon">extension</span>&nbsp;测试
+                                    </button>
+                                    <button class="btn btn-brand btn-flat waves-attach waves-effect" id="ga-set"><span
+                                            class="icon">perm_data_setting</span>&nbsp;设置
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">自定义ACL/PAC/Surge</p>
+                                <p>您可以在此处追加 Gfwlist 规则。</p>
+                                <p>格式参看<a href="https://adblockplus.org/zh_CN/filters">https://adblockplus.org/zh_CN/filters</a></p>
+                                <p>IP 段请使用 |127.0.0.0/8 类似格式表示</p>
+                                <div class="form-group form-group-label">
+                                    <label class="floating-label" for="pac">规则书写区</label>
+                                    <textarea class="form-control" id="pac" rows="8"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <button class="btn btn-flat waves-attach" id="setpac" ><span class="icon">check</span>&nbsp;设置</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div-->
+
+                <div class="card margin-bottom-no">
+                    <div class="card-main">
+                        <div class="card-inner">
+                            <div class="card-inner">
+                                <p class="card-heading">Telegram 绑定</p>
+                                <p>Telegram 添加机器人账号 <a href="https://t.me/wewallbot">@wewallbot</a>，拍下下面这张二维码发给它。</p>
+                                <div class="form-group form-group-label">
+                                    <div class="text-center">
+                                        <div id="telegram-qr">
+                                            <canvas width="200" height="200"></canvas>
+                                        </div>
+                                        当前绑定：<a href="https://t.me/yukint">@yukint</a></div>
+                                </div>
+
+                            </div>
+                            <div class="card-action">
+                                <div class="card-action-btn pull-left">
+                                    <a class="btn btn-brand-accent btn-flat waves-attach waves-effect"
+                                       href="/user/telegram_reset"><span class="icon">format_color_reset</span>&nbsp;解绑</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div aria-hidden="true" class="modal modal-va-middle fade" id="result" role="dialog" tabindex="-1">
+                <div class="modal-dialog modal-xs">
+                    <div class="modal-content">
+                        <div class="modal-inner">
+                            <p class="h5 margin-top-sm text-black-hint" id="msg"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <p class="text-right">
+                                <button class="btn btn-flat btn-brand-accent waves-attach waves-effect"
+                                        data-dismiss="modal" type="button" id="result_ok">知道了
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+</main>
+
+
+<footer class="ui-footer">
+    <div class="container">
+        <marquee>© 围墙
+            <a href="https://fly.lse.dog/staff">STAFF</a>&nbsp;如果还有来生 ，我无论如何都要来到你身边，我已经没有了其他想要追求的东西，因为没有比你更重要的了。
+        </marquee>
+
+
+        <!-- js -->
+        <script src="../static/js/jquery.min.js" type=""></script>
+        <script src="../static/js/lse/jquery.validate.min.js" type=""></script>
+        <script src="../static/js/lse/gt.js" type=""></script>
+
+        <script src="../static/js/lse/base.min.js" type=""></script>
+        <script src="../static/js/lse/project.min.js" type=""></script>
+        <script src="../static/js/lse/clipboard.min.js" type=""></script>
+        <!--script type="text/javascript" color="217,113,24" opacity="0.8" count="99" src="/assets/js/canvas-nest.min.js"></script-->
+
+
+        <script src="../static/js/lse/shake.js" type=""></script>
+
+        <script type="">
+
+            function DateParse(str_date) {
+                let str_date_splited = str_date.split(/[^0-9]/);
+                return new Date(str_date_splited[0], str_date_splited[1] - 1, str_date_splited[2], str_date_splited[3], str_date_splited[4], str_date_splited[5]);
+            }
+
+            /*
+             * Author: neoFelhz & CloudHammer
+             * https://github.com/CloudHammer/CloudHammer/make-sspanel-v3-mod-great-again
+             * License: MIT license & SATA license
+             */
+            function CountDown() {
+                let levelExpire = DateParse("2018-05-28 02:21:05");
+                let accountExpire = DateParse("2028-05-24 02:21:05");
+                let nowDate = new Date();
+                let a = nowDate.getTime();
+                let b = levelExpire - a;
+                let c = accountExpire - a;
+                let levelExpireDays = Math.floor(b / (24 * 3600 * 1000));
+                let accountExpireDays = Math.floor(c / (24 * 3600 * 1000));
+                if (levelExpireDays < 0 || levelExpireDays > 315360000000) {
+                    document.getElementById('days-level-expire').innerHTML = "无限期";
+                    for (let i = 0; i < document.getElementsByClassName('label-level-expire').length; i += 1) {
+                        document.getElementsByClassName('label-level-expire')[i].style.display = 'none';
+                    }
+                } else {
+                    document.getElementById('days-level-expire').innerHTML = levelExpireDays;
+                }
+                if (accountExpireDays < 0 || accountExpireDays > 315360000000) {
+                    document.getElementById('days-account-expire').innerHTML = "无限期";
+                    for (let i = 0; i < document.getElementsByClassName('label-account-expire').length; i += 1) {
+                        document.getElementsByClassName('label-account-expire')[i].style.display = 'none';
+                    }
+                } else {
+                    document.getElementById('days-account-expire').innerHTML = accountExpireDays;
+                }
+            }
+        </script>
+
+
+        <script type="">
+
+            $(function () {
+                new Clipboard('.copy-text');
+            });
+
+            $(".copy-text").click(function () {
+                $("#result").modal();
+                $("#msg").html("已拷贝订阅链接，请您继续接下来的操作。");
+            });
+            $(function () {
+                new Clipboard('.reset-link');
+            });
+
+            $(".reset-link").click(function () {
+                $("#result").modal();
+                $("#msg").html("已重置您的订阅链接，请变更或添加您的订阅链接！");
+                window.setTimeout("location.href='/user/url_reset'", 1200);
+            });
+
+
+            window.onload = function () {
+                let myShakeEvent = new Shake({
+                    threshold: 15
+                });
+
+                myShakeEvent.start();
+                CountDown();
+
+                window.addEventListener('shake', shakeEventDidOccur, false);
+
+                function shakeEventDidOccur() {
+                    if ("vibrate" in navigator) {
+                        navigator.vibrate(500);
+                    }
+
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/checkin",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#checkin-msg").html(data.msg);
+                            $("#checkin-btn").hide();
+                            $("#result").modal();
+                            $("#msg").html(data.msg);
+                        },
+                        error: function (jqXHR) {
+                            $("#result").modal();
+                            $("#msg").html("发生错误：" + jqXHR.status);
+                        }
+                    });
+                }
+            };
+
+
+            $(document).ready(function () {
+                $("#checkin").click(function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/user/checkin",
+                        dataType: "json",
+                        success: function (data) {
+                            $("#checkin-msg").html(data.msg);
+                            $("#checkin-btn").hide();
+                            $("#result").modal();
+                            $("#msg").html(data.msg);
+                        },
+                        error: function (jqXHR) {
+                            $("#result").modal();
+                            $("#msg").html("发生错误：" + jqXHR.status);
+                        }
+                    })
+                })
+            })
+
+
+        </script>
+    </div>
+</footer>
+<span style="position: absolute; left: 0; top: -20000px; padding: 0; margin: 0; border: none; white-space: pre; line-height: normal; font-family: Garamond, serif; font-size: 20px; font-weight: normal; display: none;">Mpgyi</span>
+
+</body>
+
+</html>
