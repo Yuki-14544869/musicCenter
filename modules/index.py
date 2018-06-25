@@ -56,11 +56,6 @@ def lse():
     return render_template('user.html')
 
 
-@index.route('/album')
-def album():
-    return render_template('album.html')
-
-
 @index.route('/shows')
 def shows():
     return render_template('shows.html')

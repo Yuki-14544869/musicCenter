@@ -1,3 +1,4 @@
+# coding:utf-8
 import sqlite3
 
 from modules.DB.DBControl import connect_db, close_db
@@ -12,16 +13,17 @@ class User(object):
     def get_pwd(user):
         conn = connect_db()
         c = conn.cursor()
-        sql = "SELECT password FROM user WHERE username='%s'" % user.username
+        sql = "SELECT password FROM users WHERE username='%s'" % user.username
         try:
             c.execute(sql)
             ans = c.fetchall()[0][0]
-            close_db(conn, c)
+            close_db(conn)
             if ans == user.password:
                 return True
             else:
                 return False
         except IndexError:
+            close_db(c)
             print(sql)
             print('list index out of range')
             return False
@@ -30,11 +32,11 @@ class User(object):
 def insert_user(user):
     conn = connect_db()
     c = conn.cursor()
-    sql = "INSERT INTO user(username, password) " \
+    sql = "INSERT INTO users(username, password) " \
           "VALUES ('%s','%s')" % (user.username, user.password)
     try:
         c.execute(sql)
-        close_db(conn, c)
+        close_db(conn)
         return True
     except sqlite3.IntegrityError:
         print('UNIQUE constraint failed: user.username')

@@ -1,14 +1,16 @@
-import sqlite3
-
-# DATABASE = 'D:/Project/FlaskLearning/DB/flaskDB.db'
-DATABASE = '/home/yukint/projects/flask/learning/DB/flaskDB.db'
+# coding:utf-8
+import pymysql
+host = "localhost"
+user = "root"
+password = "archlinux"
+database = "music"
+port = 3306
+charset = 'utf8'
 
 
 def connect_db():
-    return sqlite3.connect(DATABASE)
+    return pymysql.connect(host, user, password, database, charset='utf8')
 
 
-def close_db(conn, c):
-    c.close()
-    conn.commit()
-    conn.close()
+def close_db(db):
+    db.close()

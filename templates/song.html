@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0024)https://fly.lse.dog/user -->
 <html lang="zh-cn" class=" no-touchevents">
 
 <head>
@@ -372,50 +371,29 @@
 
 
                         <li>
-                            <a href="https://fly.lse.dog/user/ticket">
-                                <i class="icon icon-lg">question_answer</i>&nbsp;工单系统
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://fly.lse.dog/user/invite">
-                                <i class="icon icon-lg">loyalty</i>&nbsp;邀请链接
+                            <a href="/singer">
+                                <i class="icon icon-lg">question_answer</i>&nbsp歌手
                             </a>
                         </li>
 
-
-                    </ul>
-
-
-                    <a class="waves-attach waves-effect" data-toggle="collapse"
-                       href="https://fly.lse.dog/user#ui_menu_help">商店</a>
-                    <ul class="menu-collapse collapse in" id="ui_menu_help">
-                        <li>
-                            <a href="https://fly.lse.dog/user/code">
-                                <i class="icon icon-lg">code</i>&nbsp;充值
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://fly.lse.dog/user/shop">
-                                <i class="icon icon-lg">shop</i>&nbsp;套餐购买
-                            </a>
-                        </li>
-
-                        <li>
-                            <a href="https://fly.lse.dog/user/bought">
-                                <i class="icon icon-lg">shopping_cart</i>&nbsp;购买记录</a>
-                        </li>
-
-
-                        <li>
-                            <a href="https://fly.lse.dog/user/donate">
-                                <i class="icon icon-lg">attach_money</i>&nbsp;捐赠公示
-                            </a>
-                        </li>
                     </ul>
 
 
                 </li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
+                <li>&nbsp</li>
                 <li>
                     <div class="divcss5">
                         <img src="../static/image/lse/Ambassador-menu.png" width="230" height="300">
@@ -437,78 +415,17 @@
     <div class="container">
         <div class="col-lg-12 col-sm-12">
             <section class="content-inner margin-top-no">
-
-                {#					<div class="card">#}
-                {#						<div class="card-main">#}
-                {#							<div class="card-inner">#}
-                {#								<p>所有商品可以叠加购买，VIP时间会叠加</p>#}
-                {#								<p>当前余额：0.00 元</p>#}
-                {#							</div>#}
-                {#						</div>#}
-                {#					</div>#}
-
-
                 <div class="table-responsive">
-
-                    <table class="table ">
-                        <tbody>
+                    <table class="table">
+                        <tbody id="songTable">
                         <tr>
-                            <th>套餐</th>
-                            <th>价格</th>
-                            <th>套餐详情</th>
+                            <th>歌曲ID</th>
+                            <th>歌曲名</th>
+                            <th>专辑ID</th>
                             <th>操作</th>
-
                         </tr>
-                        <tr>
-                            <td>测试专用商品</td>
-                            <td>1.00 元</td>
-                            <td>添加流量 1 G , 为账号的有效期添加 1 天 , 为账号升级为等级 3 , 有效期 1 天 , 用户端口限速变为20 Mbps , 用户IP限制变为 1 个</td>
-                            <td>
-                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('1',0,0)">购买</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>月付标准流量</td>
-                            <td>12.00 元</td>
-                            <td>添加流量 512 G , 为账号的有效期添加 30 天 , 为账号升级为等级 2 , 有效期 30 天 , 用户端口限速变为50 Mbps , 用户IP限制变为 1 个
-                            </td>
-                            <td>
-                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('2',0,0)">购买</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>月付高速流量</td>
-                            <td>22.00 元</td>
-                            <td>添加流量 1024 G , 为账号的有效期添加 30 天 , 为账号升级为等级 2 , 有效期 30 天 , 用户端口限速变为100 Mbps , 用户IP限制变为 1 个
-                            </td>
-                            <td>
-                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('3',0,0)">购买</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>季付标准流量</td>
-                            <td>40.00 元</td>
-                            <td>添加流量 512 G , 为账号的有效期添加 90 天 , 为账号升级为等级 2 , 有效期 90 天 , 在 89 天内 ，每 30 天重置流量为 512 G ,
-                                用户端口限速变为100 Mbps , 用户IP限制变为 1 个
-                            </td>
-                            <td>
-                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('4',0,0)">购买</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>季付高速流量</td>
-                            <td>122.00 元</td>
-                            <td>添加流量 1024 G , 为账号的有效期添加 90 天 , 为账号升级为等级 3 , 有效期 90 天 , 在 89 天内 ，每 30 天重置流量为 1024 G ,
-                                用户端口限速变为150 Mbps , 用户IP限制变为 1 个
-                            </td>
-                            <td>
-                                <a class="btn btn-brand-accent" href="javascript:void(0);" onclick="buy('5',0,0)">购买</a>
-                            </td>
-                        </tr>
-
                         </tbody>
                     </table>
-
                 </div>
 
 
@@ -518,7 +435,7 @@
                         <div class="modal-content">
                             <div class="modal-heading">
                                 <a class="modal-close" data-dismiss="modal">×</a>
-                                <h2 class="modal-title">您有优惠码吗？</h2>
+                                <h2 class="modal-title" id="asdf">您有优惠码吗？</h2>
                             </div>
                             <div class="modal-inner">
                                 <div class="form-group form-group-label">
@@ -613,11 +530,11 @@
         <script src="../static/js/lse/base.min.js" type=""></script>
         <script src="../static/js/lse/project.min.js" type=""></script>
         <script src="../static/js/lse/clipboard.min.js" type=""></script>
-        <!--script type="text/javascript" color="217,113,24" opacity="0.8" count="99" src="/assets/js/canvas-nest.min.js"></script-->
+
 
 
         <script src="../static/js/lse/shake.js" type=""></script>
-
+        <script src="../static/js/song/myjs.js" type=""></script>
         <script type="">
 
             function DateParse(str_date) {

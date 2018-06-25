@@ -1,4 +1,4 @@
-import sqlite3
+# coding:utf-8
 from modules.DB.DBControl import connect_db, close_db
 
 
@@ -12,7 +12,25 @@ class Song(object):
         self.path = path
 
 
-def show_all(self):
+def show_all():
+    global ans
     conn = connect_db()
     c = conn.cursor()
-    close_db(conn, c)
+    sql = "SELECT * FROM song"
+    try:
+        c.execute(sql)
+        ans = format_into_json(c.fetchall())
+        # print(ans)
+    except TypeError:
+        pass
+    close_db(conn)
+    return ans
+
+
+def format_into_json(songs):
+    # print(songs)
+    return_ans = []
+    for song in songs:
+        return_ans.append({'id': song[0], 'name': song[1], 'albumId': song[2], 'songIdInAlbum': song[3]})
+    print(return_ans)
+    return return_ans
